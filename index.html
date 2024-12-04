@@ -3,29 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dogs</title>
     <link rel="stylesheet" href="src/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Ga+Maamli&family=Protest+Revolution&family=Sevillana&family=Shadows+Into+Light&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Yuji+Mai&display=swap"
+        rel="stylesheet">
 </head>
 <body>
-    <div>
+    <div class="body">
+    <div class="navigation">
         <nav>
+            <div class="dog"><img src="src/images/paw.png" alt="" width="30" height="30">  DOGS</div>
             <ul>
-                <li><a href="#" target="_blank">Home</a></li>
-                <li><a href="#" target="_blank">About</a></li>
-                <li><a href="#" target=_blank >Contact</a></li>
+                <li><a href="#home" class="active" target="_blank">≡ Home</a></li>
+                <li><a href="#info" target="_blank">Info</a></li>
+                <li><a href="#contact" target=_blank >Contact</a></li>
             </ul>
         </nav>
     </div>
+    <section id="home">
     <header>
     <h1>Furry Friends Forever</h1>
     </header>
     <main>
+        <div class="images">
         <img src="src/images/dog1.jpg" alt="">
-        <img src="src/images/dog2.jpg" alt="">
+        <img src="src/images/dog8.jpg" alt="">
         <img src="src/images/dog3.jpg" alt="">
         <img src="src/images/dog4.jpg" alt="">
         <img src="src/images/dog5.jpg" alt="">
         <img src="src/images/dog6.jpg" alt="">
+        </div>
+    </section>
+    <section id="info">
         <p>
             I might not have a dog as pet but hear me out. 
             Dogs are the most popular pet on the planet! I mean try and look around and you will see for yourself.
@@ -43,11 +55,19 @@
         companionship.
         </p>
         <button>Facts about dogs</button>
+        </section>
     </main>
-    <footer>
-        <img src="src/images/github.png" alt="" >
+    <section id="contact">
+        <div class="social">My socials</div>
+        <div class="phone"><img src="src/images/socials.png" alt=""></div>
+    <footer class="logo">
+       <a href="https://github.com/FelicityNyoni/most-loved-pet" target="_blank"><img src="src/images/github.png" alt=""></a>
         <img src="src/images/email.jpg" alt="" >
+        <img src="src/images/linkedIn.png" alt="">
     </footer>
+    </section>
+    <video id="background-video" autoplay muted loop><source src="videos/cutedog.mp4"></video>
+    </div>
   <script src="src/index.js"></script>  
 </body>
 </html>
