@@ -48,10 +48,16 @@ h1 {
     }
 }
 
+.first-letter{
+    color: rgba(226, 43, 150);
+    font-size: 88px;
+    font-family: Yuji Mai;
+}
+ 
 p {
     color: white;
-    line-height: 24px;
-    font-size: 18px;
+    line-height: 34px;
+    font-size: 28px;
     font-weight: bolder;
     margin: 60px auto;
 }
@@ -110,6 +116,10 @@ footer img {
     height: 100px;
 }
 
+ .shadow-text, p{
+    text-shadow: 15px 10px 5px rgba(226, 43, 150, 0.9);
+}
+
 .social {
     font-size: 24px;
     font-weight: bold;
@@ -153,5 +163,20 @@ footer img {
     color: black;
 }
 
+.generating {
+    animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
 
 

@@ -10,6 +10,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Ga+Maamli&family=Protest+Revolution&family=Sevillana&family=Shadows+Into+Light&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Yuji+Mai&display=swap"
         rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 </head>
 <body>
     <div class="body">
@@ -38,23 +40,24 @@
         </div>
     </section>
     <section id="info">
-        <p>
-            I might not have a dog as pet but hear me out. 
+        <p class="shadow-text">
+            <strong class="first-letter">I</strong> might not have a dog as pet but hear me out. 
             Dogs are the most popular pet on the planet! I mean try and look around and you will see for yourself.
              From their adorable puppy phase to their gentle old age, dogs captivate our hearts with their loyalty, affection, and playful personalities, solidifying their position as the world's most loved pet.
         </p>
-        <p>
+        <p class="shadow-text">
             Dogs are truly one of a kind, with their unique different breeds. They have a way of showering their human family members with affection, always happy
             to see them and eager to play or cuddle. But it’s not just their joyful nature that makes them special – it’s also their
             intelligence, trainability, and ability to sense their owner’s emotions, providing comfort and solace when needed.
         </p>
-        <p>
+        <p class="shadow-text">
         Perhaps what makes dogs most special, though, is the depth of their love and loyalty. They stand by their owner’s side
         through thick and thin, providing a sense of security and companionship that’s hard to find elsewhere. And as they grow
         old together with their owners, their bond only deepens, a testament to the transformative power of love and
         companionship.
         </p>
-        <button>Facts about dogs</button>
+        <button id="fact-generator">Facts about dogs</button>
+        <div class="hidden" id="fact"></div>
         </section>
     </main>
     <section id="contact">
