@@ -17,7 +17,7 @@ let prompt = "User instructions are: Generate a fact about dogs";
 let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
 let factElement = document.querySelector("#fact");
-factElement.innerHTML = `<div class="generating">⌛Generating a fact about dogs🐕...</div>`;
+factElement.innerHTML = `<div class="generating">⌛Unleashing a paw-some fact!🐕...</div>`;
 axios.get(apiUrl).then(displayFact);
 }
 
