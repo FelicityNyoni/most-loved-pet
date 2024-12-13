@@ -39,6 +39,7 @@ h1 {
     animation: flip 2s;
     animation-iteration-count: 2;
 }
+
 @keyframes flip {
     0%{
         transform: rotateY(0deg);
@@ -96,7 +97,7 @@ p {
     height: 300px;
     border-radius: 10px;
     object-fit: cover;
-    transition: all 1s ease-in-out;
+    transition: all 150ms ease-in-out;
 }
 
 .images img:hover {
@@ -117,6 +118,23 @@ footer img {
     right: -700px;
     margin: 60px auto;
     padding: 10px;
+}
+
+.moving-text {
+    bottom: 20px;
+    font-family: Yuji Mai;
+    font-size: small;
+    text-align: center;
+    position: relative;
+    animation: move 10s linear infinite;
+}
+@keyframes move {
+    0%{
+        transform: translateX(100vw);
+    }
+    100%{
+        transform: translateX(-100vw);
+    }
 }
 
  .shadow-text, p{
