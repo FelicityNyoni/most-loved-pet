@@ -12,6 +12,11 @@
         <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
         <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
         <style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
             body{
     margin: 0;
     padding: 0;
@@ -217,9 +222,30 @@ footer img {
         visibility: hidden;
     }
 }
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        margin: 20px auto;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        margin: 10px auto;
+        padding: 5px;
+    }
+}
         </style>
 </head>
 <body>
+    <div class="container">
     <div class="body">
     <div class="navigation">
         <nav>
@@ -306,6 +332,7 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/151/948/origina
 
         let factGeneratorElement = document.querySelector("#fact-generator");
         factGeneratorElement.addEventListener("click", factGenerator);
-  </script>  
+  </script> 
+  </div>/ 
 </body>
 </html>
